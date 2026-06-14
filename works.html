@@ -1,0 +1,398 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Works — Ademola Thompson</title>
+    <meta
+      name="description"
+      content="Documentation, guides, and articles written by Ademola Thompson, technical writer and developer advocate — plus a few projects built along the way."
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/works.css" />
+  </head>
+  <body>
+    <!-- ── Nav ── -->
+    <nav class="nav" aria-label="Main navigation">
+      <a href="index.html" class="nav__logo">Ademola Thompson</a>
+      <button
+        class="nav__toggle"
+        aria-label="Toggle menu"
+        aria-expanded="false"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav__links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="works.html" class="active">Works</a></li>
+        <li>
+          <a href="https://github.com/" target="_blank" rel="noopener"
+            >Github</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <main>
+      <!-- ── Works Hero ── -->
+      <section class="works-hero">
+        <p class="works-hero__label">Works</p>
+        <h1 class="works-hero__heading">
+          Documentation, guides, and articles I've written — plus a few things
+          I've built along the way.
+        </h1>
+      </section>
+
+      <!-- ── Filter Tabs ── -->
+      <section class="works-filter">
+        <div class="works-filter__tabs" role="tablist">
+          <button
+            class="filter-tab active"
+            data-filter="all"
+            role="tab"
+            aria-selected="true"
+          >
+            All
+          </button>
+          <button
+            class="filter-tab"
+            data-filter="documentation"
+            role="tab"
+            aria-selected="false"
+          >
+            Documentation
+          </button>
+          <button
+            class="filter-tab"
+            data-filter="project"
+            role="tab"
+            aria-selected="false"
+          >
+            Projects
+          </button>
+          <button
+            class="filter-tab"
+            data-filter="article"
+            role="tab"
+            aria-selected="false"
+          >
+            Articles
+          </button>
+        </div>
+      </section>
+
+      <!-- ── Works Grid ── -->
+      <!-- ── Works Grid ── -->
+      <section class="works-grid" id="worksGrid">
+        <article class="work-card" data-category="documentation">
+          <span class="work-card__badge">Documentation</span>
+          <h3 class="work-card__title">Juncta Documentation</h3>
+          <p class="work-card__desc">
+            Guides and protocol documentation for Juncta, a DLMM DeFi protocol
+            on Cedra — ongoing as the protocol approaches launch.
+          </p>
+          <div class="work-card__tags">
+            <span class="tag">Web3</span>
+            <span class="tag">DeFi</span>
+            <span class="tag">Documentation</span>
+          </div>
+          <a
+            href="https://docs.juncta.xyz/"
+            target="_blank"
+            rel="noopener"
+            class="work-card__link"
+            >View docs <span>→</span></a
+          >
+        </article>
+
+        <article class="work-card" data-category="documentation">
+          <span class="work-card__badge">Documentation</span>
+          <h3 class="work-card__title">Lode Protocol Documentation</h3>
+          <p class="work-card__desc">
+            Docs-as-code developer documentation for a Web3 KYC/AML platform,
+            built with GitBook to streamline integration for compliance teams.
+          </p>
+          <div class="work-card__tags">
+            <span class="tag">GitBook</span>
+            <span class="tag">Web3</span>
+          </div>
+          <a
+            href="https://lode-protocol.gitbook.io/lode-protocol-docs"
+            target="_blank"
+            rel="noopener"
+            class="work-card__link"
+            >View docs <span>→</span></a
+          >
+        </article>
+
+        <article class="work-card" data-category="documentation">
+          <span class="work-card__badge">Documentation</span>
+          <h3 class="work-card__title">Afrimarket Documentation</h3>
+          <p class="work-card__desc">
+            Developer documentation and onboarding tutorial for a Python library
+            providing financial data on African stock exchanges.
+          </p>
+          <div class="work-card__tags">
+            <span class="tag">Python</span>
+            <span class="tag">API</span>
+          </div>
+          <a
+            href="https://afrimarket.readthedocs.io/en/latest/"
+            target="_blank"
+            rel="noopener"
+            class="work-card__link"
+            >View docs <span>→</span></a
+          >
+        </article>
+
+        <article class="work-card" data-category="documentation">
+          <span class="work-card__badge">Documentation</span>
+          <h3 class="work-card__title">DRF Blog Bridger Documentation</h3>
+          <p class="work-card__desc">
+            API reference and integration guide for a Django REST Framework blog
+            bridging service, covering authentication, endpoints, and data
+            models.
+          </p>
+          <div class="work-card__tags">
+            <span class="tag">Django REST</span>
+            <span class="tag">API</span>
+          </div>
+          <a
+            href="https://drf-blog-bridger.readthedocs.io/en/latest/"
+            target="_blank"
+            rel="noopener"
+            class="work-card__link"
+            >View docs <span>→</span></a
+          >
+        </article>
+
+        <article class="work-card" data-category="project">
+          <span class="work-card__badge">Project</span>
+          <h3 class="work-card__title">OpenAPI Spec Translator CLI</h3>
+          <p class="work-card__desc">
+            A command-line tool that auto-translates OpenAPI specifications,
+            making multilingual API docs easier to maintain.
+          </p>
+          <div class="work-card__tags">
+            <span class="tag">CLI</span>
+            <span class="tag">Automation</span>
+          </div>
+          <a
+            href="https://github.com/ade555/trans-spec"
+            target="_blank"
+            rel="noopener"
+            class="work-card__link"
+            >View project <span>→</span></a
+          >
+        </article>
+
+        <article class="work-card" data-category="project">
+          <span class="work-card__badge">Project</span>
+          <h3 class="work-card__title">Lingo WP Translator</h3>
+          <p class="work-card__desc">
+            A WordPress plugin that performs automatic content translation by
+            integrating Lingo.dev's PHP SDK.
+          </p>
+          <div class="work-card__tags">
+            <span class="tag">PHP</span>
+            <span class="tag">i18n</span>
+          </div>
+          <a
+            href="https://github.com/ade555/lingo-wp-translator"
+            target="_blank"
+            rel="noopener"
+            class="work-card__link"
+            >View project <span>→</span></a
+          >
+        </article>
+
+        <article class="work-card" data-category="article">
+          <span class="work-card__badge">Article</span>
+          <h3 class="work-card__title">
+            Witnesses in Depth: Patterns, Types, and Real Use Cases
+          </h3>
+          <p class="work-card__desc">
+            A technical deep dive into Midnight's witness system, covering
+            design patterns, types, and practical implementation examples.
+          </p>
+          <p class="work-card__desc"><em>Written for Midnight.</em></p>
+          <div class="work-card__tags">
+            <span class="tag">Midnight</span>
+            <span class="tag">ZK Proofs</span>
+            <span class="tag">Web3</span>
+            <span class="tag">Blockchain</span>
+          </div>
+          <a
+            href="https://dev.to/superherojt/witnesses-in-depth-patterns-types-and-real-use-cases-in-compact-3ec8"
+            target="_blank"
+            rel="noopener"
+            class="work-card__link"
+            >Read article <span>→</span></a
+          >
+        </article>
+
+        <article class="work-card" data-category="article">
+          <span class="work-card__badge">Article</span>
+          <h3 class="work-card__title">
+            Selective Disclosure Patterns in Compact
+          </h3>
+          <p class="work-card__desc">
+            A technical deep dive into Midnight's approach towards selective
+            disclosure and how best to apply it
+          </p>
+          <p class="work-card__desc"><em>Written for Midnight.</em></p>
+          <div class="work-card__tags">
+            <span class="tag">Midnight</span>
+            <span class="tag">ZK Proofs</span>
+            <span class="tag">Web3</span>
+            <span class="tag">Blockchain</span>
+          </div>
+          <a
+            href="https://dev.to/superherojt/selective-disclosure-patterns-in-compact-flo"
+            target="_blank"
+            rel="noopener"
+            class="work-card__link"
+            >Read article <span>→</span></a
+          >
+        </article>
+
+        <article class="work-card" data-category="article">
+          <span class="work-card__badge">Article</span>
+          <h3 class="work-card__title">
+            How to build a Flask app with Neon serverless database
+          </h3>
+          <p class="work-card__desc">
+            A step-by-step guide to connecting a Flask application to a Neon
+            serverless Postgres database, from setup to deployment.
+          </p>
+          <p class="work-card__desc"><em>Written for Hackmamba.</em></p>
+          <div class="work-card__tags">
+            <span class="tag">Neon</span>
+            <span class="tag">Flask</span>
+          </div>
+          <a
+            href="https://dev.to/hackmamba/how-to-build-a-flask-app-with-neon-serverless-database-cae"
+            target="_blank"
+            rel="noopener"
+            class="work-card__link"
+            >Read article <span>→</span></a
+          >
+        </article>
+
+        <article class="work-card" data-category="article">
+          <span class="work-card__badge">Article</span>
+          <h3 class="work-card__title">
+            What Comes First When Writing Documentation — The Product or The
+            Users?
+          </h3>
+          <p class="work-card__desc">
+            An opinionated piece on how I think teams should think when
+            approaching product or developer documentation
+          </p>
+          <div class="work-card__tags">
+            <span class="tag">Documentation</span>
+            <span class="tag">DevRel</span>
+          </div>
+          <a
+            href="https://dev.to/superherojt/what-comes-first-when-writing-documentation-the-product-or-the-users-1a1p"
+            target="_blank"
+            rel="noopener"
+            class="work-card__link"
+            >Read article <span>→</span></a
+          >
+        </article>
+
+        <article class="work-card" data-category="article">
+          <span class="work-card__badge">Article</span>
+          <h3 class="work-card__title">
+            Understanding User Needs in Technical Writing: How Frameworks Like
+            Diátaxis Help
+          </h3>
+          <p class="work-card__desc">
+            A piece on understanding user needs in technical writing and how
+            teams can apply the Diátaxis framework to achieve better results
+          </p>
+          <div class="work-card__tags">
+            <span class="tag">Documentation</span>
+            <span class="tag">DevRel</span>
+          </div>
+          <a
+            href="https://dev.to/superherojt/understanding-user-needs-in-technical-writing-how-frameworks-like-diataxis-help-2l9n"
+            target="_blank"
+            rel="noopener"
+            class="work-card__link"
+            >Read article <span>→</span></a
+          >
+        </article>
+      </section>
+
+      <!-- ── CTA ── -->
+      <section class="cta-section">
+        <div class="cta-section__text">
+          <h2>Interested in<br />working together?</h2>
+          <a href="mailto:hello@ademola.dev">Get in touch ↗</a>
+        </div>
+        <div class="cta-section__orb" aria-hidden="true">
+          <svg
+            class="orb-globe"
+            viewBox="0 0 175 187"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M174.77 93.288C174.77 144.81 135.647 186.576 87.3851 186.576C39.1236 186.576 0 144.81 0 93.288C0 41.7665 39.1236 0 87.3851 0C135.647 0 174.77 41.7665 174.77 93.288ZM76.462 93.288C76.462 52.3483 79.5499 17.5681 83.845 5.00822C83.034 5.90608 82.1574 7.14369 81.2324 8.81441C78.8104 13.1889 76.5345 19.7131 74.5867 28.0305C70.7016 44.6205 68.2696 67.6938 68.2696 93.288C68.2696 118.882 70.7016 141.956 74.5867 158.546C76.5345 166.863 78.8104 173.387 81.2324 177.762C82.1574 179.432 83.034 180.67 83.845 181.568C79.5498 169.008 76.462 134.228 76.462 93.288ZM93.5378 8.81441C92.6128 7.14368 91.7362 5.90607 90.9252 5.00821C95.2203 17.568 98.3082 52.3483 98.3082 93.288C98.3082 134.228 95.2203 169.008 90.9252 181.568C91.7362 180.67 92.6128 179.432 93.5378 177.762C95.9598 173.387 98.2357 166.863 100.183 158.546C104.069 141.956 106.501 118.882 106.501 93.288C106.501 67.6938 104.069 44.6205 100.183 28.0305C98.2357 19.7131 95.9598 13.1889 93.5378 8.81441ZM79.4075 6.41551C78.4976 7.21893 77.5853 8.16673 76.6731 9.26503C73.0531 13.6238 69.6684 20.0974 66.7705 28.347C60.9824 44.8248 57.3465 67.7843 57.3465 93.288C57.3465 118.792 60.9824 141.751 66.7705 158.229C69.6684 166.479 73.0531 172.952 76.6731 177.311C77.5853 178.409 78.4976 179.357 79.4075 180.161C71.2877 166.553 65.5388 132.788 65.5388 93.288C65.5388 53.7885 71.2877 20.0227 79.4075 6.41551ZM95.3627 6.41551C96.2726 7.21893 97.185 8.16672 98.0971 9.26503C101.717 13.6238 105.102 20.0974 108 28.347C113.788 44.8248 117.424 67.7843 117.424 93.288C117.424 118.792 113.788 141.751 108 158.229C105.102 166.479 101.717 172.952 98.0971 177.311C97.185 178.409 96.2726 179.357 95.3627 180.161C103.482 166.553 109.231 132.788 109.231 93.288C109.231 53.7885 103.482 20.0227 95.3627 6.41551ZM58.9323 28.6272C63.3677 19.1572 68.6049 12.1142 74.2337 7.81673C62.6835 22.2404 54.6157 55.0821 54.6157 93.288C54.6157 131.494 62.6835 164.336 74.2337 178.759C68.6049 174.462 63.3677 167.419 58.9323 157.949C51.2523 141.551 46.4233 118.694 46.4233 93.288C46.4233 67.8817 51.2523 45.0247 58.9323 28.6272ZM115.838 28.6272C111.403 19.1572 106.165 12.1142 100.536 7.81673C112.087 22.2404 120.155 55.0821 120.155 93.288C120.155 131.494 112.087 164.336 100.536 178.759C106.165 174.462 111.403 167.419 115.838 157.949C123.518 141.551 128.347 118.694 128.347 93.288C128.347 67.8817 123.518 45.0247 115.838 28.6272ZM68.4657 9.17541C61.9984 13.6213 56.0892 20.3152 51.0817 28.8685C41.5098 45.2181 35.5002 67.9862 35.5002 93.288C35.5002 118.59 41.5098 141.358 51.0817 157.708C56.0892 166.261 61.9984 172.955 68.4657 177.401C53.8089 162.344 43.6926 130.339 43.6926 93.288C43.6926 56.2374 53.8089 24.2316 68.4657 9.17541ZM106.304 9.17541C112.772 13.6213 118.681 20.3152 123.689 28.8685C133.26 45.2181 139.27 67.9862 139.27 93.288C139.27 118.59 133.26 141.358 123.689 157.708C118.681 166.261 112.772 172.955 106.304 177.401C120.961 162.344 131.078 130.339 131.078 93.288C131.078 56.2374 120.961 24.2316 106.304 9.17541ZM43.2268 29.0726C48.694 21.2905 55.1079 14.9851 62.1693 10.5163C44.6979 26.0768 32.7694 57.303 32.7694 93.288C32.7694 129.273 44.6979 160.499 62.1693 176.06C55.1079 171.591 48.694 165.286 43.2268 157.503C31.7539 141.173 24.5771 118.479 24.5771 93.288C24.5771 68.097 31.7539 45.4031 43.2268 29.0726ZM131.543 29.0726C126.076 21.2905 119.662 14.9851 112.601 10.5163C130.072 26.0768 142.001 57.303 142.001 93.288C142.001 129.273 130.072 160.499 112.601 176.06C119.662 171.591 126.076 165.286 131.543 157.503C143.016 141.173 150.193 118.479 150.193 93.288C150.193 68.097 143.016 45.4031 131.543 29.0726ZM55.3299 11.9007C30.7695 26.4648 13.6539 57.2569 13.6539 93.288C13.6539 129.319 30.7695 160.111 55.3299 174.675C35.3471 158.695 21.8463 128.236 21.8463 93.288C21.8463 58.3403 35.3472 27.8809 55.3299 11.9007ZM119.44 11.9007C144.001 26.4648 161.116 57.2569 161.116 93.288C161.116 129.319 144.001 160.111 119.44 174.675C139.423 158.695 152.924 128.236 152.924 93.288C152.924 58.3403 139.423 27.8809 119.44 11.9007ZM2.73078 93.288C2.73078 58.4558 21.1899 28.2262 48.2348 13.1396C25.8882 29.4231 10.9231 59.2234 10.9231 93.288C10.9231 127.353 25.8882 157.153 48.2347 173.436C21.1899 158.35 2.73078 128.12 2.73078 93.288ZM172.039 93.288C172.039 58.4558 153.58 28.2262 126.535 13.1396C148.882 29.4231 163.847 59.2234 163.847 93.288C163.847 127.353 148.882 157.153 126.535 173.436C153.58 158.35 172.039 128.12 172.039 93.288ZM92.3992 27.685C94.358 44.4134 95.5775 67.609 95.5775 93.288C95.5775 118.967 94.358 142.163 92.3992 158.891C91.4175 167.276 90.2624 173.924 89.0181 178.419C88.9284 178.743 88.8391 179.052 88.7505 179.347L88.7505 7.22888C88.8391 7.52386 88.9284 7.83324 89.0181 8.15726C90.2624 12.6523 91.4175 19.3004 92.3992 27.685ZM86.0197 179.347L86.0197 7.22888C85.9311 7.52386 85.8418 7.83324 85.7521 8.15726C84.5078 12.6523 83.3527 19.3004 82.371 27.685C80.4122 44.4134 79.1928 67.609 79.1928 93.288C79.1928 118.967 80.4122 142.163 82.371 158.891C83.3527 167.276 84.5078 173.924 85.7521 178.419C85.8418 178.743 85.9311 179.052 86.0197 179.347Z"
+              fill="white"
+            />
+          </svg>
+          <svg
+            class="orb-star"
+            viewBox="0 0 280 253"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M205.293 40.9142C205.086 40.8748 204.884 41.0149 204.843 41.227C204.801 41.4392 204.936 41.6432 205.143 41.6826L205.293 40.9142ZM53.3843 104.761L53.1057 104.497C53.0952 104.508 53.0854 104.52 53.0763 104.533L53.3843 104.761ZM70.8993 87.5382C70.9107 87.3226 70.7489 87.1406 70.5378 87.1318L67.0985 86.9883C66.8874 86.9795 66.7071 87.1472 66.6956 87.3628C66.6842 87.5784 66.8461 87.7604 67.0571 87.7692L70.1143 87.8967L69.9489 91.0201C69.9375 91.2357 70.0993 91.4177 70.3104 91.4265C70.5214 91.4353 70.7018 91.2676 70.7132 91.052L70.8993 87.5382ZM244.863 67.74C254.239 85.3419 250.95 108.006 237.919 130.471C224.892 152.929 202.162 175.12 172.805 191.699L173.169 192.382C202.626 175.746 225.467 153.462 238.576 130.863C251.68 108.272 255.091 85.2977 245.536 67.3596L244.863 67.74ZM172.805 191.699C143.449 208.278 113.058 216.087 87.6633 215.327C62.2598 214.567 41.931 205.241 32.5548 187.639L31.8813 188.019C41.4366 205.957 62.0859 215.344 87.6308 216.108C113.185 216.873 143.712 209.017 173.169 192.382L172.805 191.699ZM205.143 41.6826C223.274 45.1308 237.47 53.8622 244.863 67.74L245.536 67.3596C238.004 53.2193 223.573 44.3908 205.293 40.9142L205.143 41.6826ZM32.5548 187.639C26.4704 176.217 26.2117 163.305 30.2497 149.363C34.2897 135.413 42.6252 120.457 53.6923 104.989L53.0763 104.533C41.985 120.035 33.592 135.076 29.5159 149.15C25.4377 163.231 25.675 176.368 31.8813 188.019L32.5548 187.639ZM53.6629 105.025C61.2671 96.6799 61.8196 96.1326 70.7728 87.8096L70.2616 87.2349C61.2942 95.5711 60.7261 96.1339 53.1057 104.497L53.6629 105.025Z"
+              fill="white"
+            />
+            <path
+              d="M220.608 0C220.608 29.9966 197.061 54.3136 168.014 54.3136C197.061 54.3136 220.608 78.6306 220.608 108.627C220.608 78.6306 244.155 54.3136 273.202 54.3136C244.155 54.3136 220.608 29.9966 220.608 0Z"
+              fill="white"
+            />
+          </svg>
+        </div>
+      </section>
+    </main>
+
+    <!-- ── Footer ── -->
+    <footer class="footer footer--dark">
+      <div class="footer__inner">
+        <a href="index.html" class="footer__logo">Ademola</a>
+        <ul class="footer__links">
+          <li>
+            <a href="https://linkedin.com/" target="_blank" rel="noopener"
+              >LinkedIn</a
+            >
+          </li>
+          <li><a href="#" target="_blank" rel="noopener">Resume</a></li>
+          <li>
+            <a href="https://dev.to/" target="_blank" rel="noopener">DevTo</a>
+          </li>
+          <li>
+            <a href="https://github.com/" target="_blank" rel="noopener"
+              >Github</a
+            >
+          </li>
+        </ul>
+      </div>
+      <p class="footer__copy">© Ademola || 2025</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/works.js"></script>
+  </body>
+</html>
