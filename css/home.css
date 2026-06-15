@@ -439,6 +439,11 @@
     max-width: 60%;
   }
 
+  .job-title {
+    order: 3;
+    margin-top: 10px;
+  }
+
   .hero__cube {
     order: 2;
   }
